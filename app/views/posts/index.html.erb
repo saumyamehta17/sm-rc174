@@ -1,0 +1,7 @@
+<%= javascript_include_tag('pagination.js') %>
+
+<div id="posts">
+   <%= render "index_with_pagination" , posts: @posts %>
+</div>
+
+<%= link_to 'New Post', new_post_path %>
